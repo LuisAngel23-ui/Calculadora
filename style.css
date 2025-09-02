@@ -79,3 +79,12 @@ body{
     margin-top: 1rem;
     color: var(--color-terceario);
 }
+
+@media (max-width:550px){
+    .Calculadora{
+    
+    height: 80%;
+    width: 50%;
+ 
+}
+}
