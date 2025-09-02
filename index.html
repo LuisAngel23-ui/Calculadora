@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css" >
+    <title>Calculadora</title>
+    
+</head>
+<body>
+    <main class="Calculadora"> <!-- Aqui se alojará toda la calculadora -->
+        <section class="Pantalla" >
+            <h2 class="Pantalla_texto" id="Pantalla_texto"></h2>
+        </section>
+
+
+    <div class="botones">
+        <button onclick="borrar(1)" class="Tecla" id="AC">AC</button>
+        <button onclick="borrar(0)" class="Tecla" id="Del">Del </button>
+        <button onclick="get_num(Math.PI.toFixed(4))" class="Tecla" id="Del">π </button>
+        <button onclick="Operacion(4)" class="Tecla" >/</button>
+
+        <button onclick="get_num(7)" class="Tecla" >7</button>
+        <button onclick="get_num(8)" class="Tecla" >8</button>
+        <button onclick="get_num(9)" class="Tecla" >9</button>
+
+        <button onclick="Operacion(3)"class="Tecla" >x</button>
+
+        <button onclick="get_num(4)" class="Tecla" >4</button>
+        <button onclick="get_num(5)" class="Tecla" >5</button>
+        <button onclick="get_num(6)" class="Tecla" >6</button>
+
+        <button onclick="Operacion(2)" class="Tecla" >-</button>
+
+        <button onclick="get_num(1)" class="Tecla" >1</button>
+        <button onclick="get_num(2)" class="Tecla" >2</button>
+        <button onclick="get_num(3)" class="Tecla" >3</button>
+
+        <button onclick="Operacion(1)"  class="Tecla" >+</button>
+
+        <button onclick="extras(1)" class="Tecla">00</button>
+        <button onclick="get_num(0)" class="Tecla">0</button>
+        <button onclick="extras(0)" class="Tecla" id="punto">.</button>
+        <button onclick="igualdad()" class="Tecla" id="igualdad">=</button>
+    </div>
+
+
+    </main>
+
+    <footer class="Pie">Desarrollado por Luis Angel Guillen Cebrero </footer>
+    <script src="app.js" defer></script> 
+</body>
+</html>

@@ -1,0 +1,81 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap');
+    
+
+:root{
+        font-size: clamp(6px,1vw,16px);
+        --Fuente:"Roboto Mono", monospace;
+        font-size: clamp(4px,1.5vw,16px);
+        --color-primario: #0D0208;
+        --color-secundario: #003B00;
+        --color-terceario:#008F11;
+        --color-cuartario:#00FF41
+    }
+
+
+body{
+    height: 100vh;
+    width: 100vw;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #000;
+}
+.Calculadora{
+    background-color: var(--color-primario);
+    height: 80%;
+    width: 30%;
+    border-radius: 1rem;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    border: 0.2rem solid var(--color-cuartario);
+}
+.Pantalla{
+    background-color: var(--color-secundario);
+    width: 80%;
+    height: 15%;
+    margin-top: 10%;
+    border-radius: 1rem;
+    color:var(--color-terceario);
+    display: flex;
+    align-items:center;
+    justify-content: right;
+}
+.Pantalla_texto{
+    font-family: var(--Fuente);
+    font-weight: 100;
+    font-size: 3rem;
+    overflow-x:hidden;
+    padding-right: 5%;
+    padding-left: 5%;
+}
+.botones{
+    height: 60%;
+    width: 80%;
+    padding-top: 5%;
+    padding-bottom: 5%;
+    display:grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 5%;
+    margin-top: 5%;
+}
+.Tecla{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    color: var(--color-terceario);
+    background-color:var(--color-secundario);
+    border-radius: 1rem;
+    border: 0.1rem solid var(--color-cuartario);
+}
+.Tecla:hover {
+  box-shadow: 0 0 10px var(--color-cuartario);  /* halo de color */
+  background: var(--color-cuartario);              /* cambia un poco el fondo */
+  cursor: pointer;               /* cambia el cursor */
+}
+.Pie{
+    margin-top: 1rem;
+    color: var(--color-terceario);
+}
