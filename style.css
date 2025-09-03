@@ -80,11 +80,29 @@ body{
     color: var(--color-terceario);
 }
 
-@media (max-width:550px){
+@media (max-width:1150px){
     .Calculadora{
     
     height: 80%;
-    width: 50%;
- 
+    width: 80%;
+}
+@media (max-width: 510px) and (min-height: 510px) {
+  .Calculadora {
+    height: 60%;
+    width: 80%;
+  }
 }
 }
+@media (max-width: 510px) and (min-height: 510px) {
+  .Calculadora {
+    height: 60%;
+    width: 80%;
+  }
+}
+@media (max-width: 330px) and (min-height: 510px) {
+  .Calculadora {
+    height: 50%;
+    width: 80%;
+  }
+}
+
