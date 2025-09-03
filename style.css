@@ -80,7 +80,7 @@ body{
     color: var(--color-terceario);
 }
 
-@media (max-width:1150px){
+@media (max-width:1150px)and (min-height: 350px){
     .Calculadora{
     
     height: 80%;
